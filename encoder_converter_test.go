@@ -49,11 +49,12 @@ func TestEncodeSlice(t *testing.T) {
 	assert.Equal([]string{"10", "20"}, encodeSlice(nextEncodeInt, nil, reflect.ValueOf([]int{10, 20})))
 }
 
-// func TestEncodePointer(t *testing.T) {
-// 	assert := require.New(t)
+func TestEncodePointer(t *testing.T) {
+	assert := require.New(t)
 
-// 	assert.Equal([]string{"10"}, encodePointer(nextEncodeInt, nil, reflect.ValueOf(10).Addr()))
-// }
+	v := 10
+	assert.Equal([]string{"10"}, encodePointer(nextEncodeInt, nil, reflect.ValueOf(&v)))
+}
 
 func TestEncodeTime(t *testing.T) {
 	assert := require.New(t)
