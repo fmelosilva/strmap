@@ -18,7 +18,7 @@ go get -u github.com/fmelosilva/strmap
 Then import it in your code.
 
 ```go
-import github.com/fmelosilva/strmap
+import "github.com/fmelosilva/strmap"
 ```
 
 
