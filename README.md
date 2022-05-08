@@ -1,5 +1,7 @@
 # StrMap
 
+[![Run Tests](https://github.com/fmelosilva/strmap/actions/workflows/test.yml/badge.svg)](https://github.com/fmelosilva/strmap/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/fmelosilva/strmap/branch/main/graph/badge.svg?token=GRGBRSLSBS)](https://codecov.io/gh/fmelosilva/strmap)
+
 Package [strmap](https://github.com/fmelosilva/strmap) converts a given struct to/from a flat map.
 
     struct ⇆ map[string][]string
