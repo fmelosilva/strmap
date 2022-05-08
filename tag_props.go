@@ -75,15 +75,13 @@ func parseTagProps(sp string) (TagProps, error) {
 	ps := strings.Split(sp, ",")
 	name := &ps[0]
 
-	switch *name {
-	case "-":
+	if *name == "-" {
 		fp.Ignore = true
 		return fp, nil
-	case "":
-		name = nil
-	default:
-		fp.Name = name
+	}
 
+	if *name != "" {
+		fp.Name = name
 	}
 
 	for _, p := range ps[1:] {
