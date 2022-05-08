@@ -22,7 +22,6 @@ jobs:
           version: v1.45.0
           args: --verbose
   test:
-    needs: lint
     runs-on: ubuntu-latest
     env:
       GO111MODULE: on
